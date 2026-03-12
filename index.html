@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══════════ PRIMARY META ═══════════ -->
+<title>ТЕХНО.Core — Проектирование АСУ ТП | ПЛК, SCADA, HMI</title>
+<meta name="description" content="ТЕХНО.Core — инжиниринговая группа по проектированию систем автоматизации (АСУ ТП). Разработка ПЛК-программ, SCADA/HMI, электрических схем для насосных станций, термического и криогенного оборудования.">
+<meta name="keywords" content="АСУ ТП, проектирование, ПЛК, SCADA, HMI, Codesys, Owen, автоматизация, насосные станции, криогенное оборудование, термическое оборудование, гарантированное питание, АВР, ИБП, EPlan, инжиниринг">
+<meta name="author" content="ТЕХНО.Core">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<link rel="canonical" href="https://techno-core.pro/">
+
+<!-- ═══════════ GEO / REGIONAL ═══════════ -->
+<meta name="geo.region" content="RU">
+<meta name="geo.placename" content="Россия">
+<meta name="language" content="Russian">
+<meta name="content-language" content="ru">
+
+<!-- ═══════════ OPEN GRAPH (Facebook, VK, Telegram) ═══════════ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://techno-core.pro/">
+<meta property="og:site_name" content="ТЕХНО.Core">
+<meta property="og:title" content="ТЕХНО.Core — Проектирование АСУ ТП">
+<meta property="og:description" content="Инжиниринговая группа по автоматизации промышленных объектов. ПЛК, SCADA/HMI, электрические схемы. Более 10 реализованных объектов.">
+<meta property="og:image" content="https://techno-core.pro/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ТЕХНО.Core — Проектирование АСУ ТП">
+<meta property="og:locale" content="ru_RU">
+
+<!-- ═══════════ TWITTER CARD ═══════════ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ТЕХНО.Core — Проектирование АСУ ТП">
+<meta name="twitter:description" content="Инжиниринговая группа по автоматизации промышленных объектов. ПЛК, SCADA/HMI, электрические схемы.">
+<meta name="twitter:image" content="https://techno-core.pro/og-image.png">
+
+<!-- ═══════════ THEME / PWA ═══════════ -->
+<meta name="theme-color" content="#0078c8">
+<meta name="msapplication-TileColor" content="#0078c8">
+<meta name="color-scheme" content="light dark">
+
+<!-- ═══════════ STRUCTURED DATA — Organization ═══════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ТЕХНО.Core",
+  "alternateName": "ТехноКор",
+  "url": "https://techno-core.pro",
+  "logo": "https://techno-core.pro/logo.svg",
+  "description": "Инжиниринговая группа по проектированию систем автоматизации технологических процессов (АСУ ТП). Разработка ПЛК-программ, SCADA/HMI-систем, электрических схем.",
+  "foundingDate": "2020",
+  "areaServed": "RU",
+  "serviceType": [
+    "Проектирование АСУ ТП",
+    "Программирование ПЛК",
+    "Разработка SCADA/HMI",
+    "Проектирование электрических схем",
+    "Автоматизация насосных станций",
+    "Автоматизация криогенного оборудования"
+  ],
+  "sameAs": []
+}
+</script>
+
+<!-- ═══════════ STRUCTURED DATA — LocalBusiness ═══════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ТЕХНО.Core",
+  "url": "https://techno-core.pro",
+  "description": "Проектирование систем автоматизации (АСУ ТП): ПЛК, SCADA, HMI, электрические схемы",
+  "priceRange": "по запросу",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Russia"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Услуги ТЕХНО.Core",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "АСУ ТП насосных станций" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Автоматизация термического оборудования" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "АСУ криогенного оборудования" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Системы гарантированного питания (АВР, ИБП)" } }
+    ]
+  }
+}
+</script>
+
+<!-- ═══════════ STRUCTURED DATA — WebSite (sitelinks searchbox) ═══════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ТЕХНО.Core",
+  "url": "https://techno-core.pro"
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68 68'%3E%3Cpath d='M14 2H54L66 14V54L54 66H14L2 54V14Z' stroke='%230078c8' stroke-width='2' fill='none'/%3E%3Crect x='17' y='17' width='34' height='34' rx='1' stroke='%230078c8' stroke-width='1.2' fill='rgba(0,120,200,0.06)'/%3E%3Ccircle cx='25' cy='25' r='2.2' fill='%230078c8' opacity='0.3'/%3E%3Ccircle cx='34' cy='25' r='2.2' fill='%230078c8' opacity='0.5'/%3E%3Ccircle cx='43' cy='25' r='2.2' fill='%230078c8' opacity='0.3'/%3E%3Ccircle cx='25' cy='34' r='2.2' fill='%230078c8' opacity='0.5'/%3E%3Ccircle cx='34' cy='34' r='5.5' fill='%230078c8'/%3E%3Ccircle cx='43' cy='34' r='2.2' fill='%230078c8' opacity='0.5'/%3E%3Ccircle cx='25' cy='43' r='2.2' fill='%230078c8' opacity='0.3'/%3E%3Ccircle cx='34' cy='43' r='2.2' fill='%230078c8' opacity='0.5'/%3E%3Ccircle cx='43' cy='43' r='2.2' fill='%230078c8' opacity='0.3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* ══════════════════════════════════════════════════
+     LIGHT THEME — default (desktop + forced on ≥769px)
+  ══════════════════════════════════════════════════ */
+  :root {
+    --bg:           #f5f6f8;
+    --bg2:          #edf0f4;
+    --bg3:          #e4e8ee;
+    --border:       rgba(0,100,160,0.14);
+    --border-str:   rgba(0,100,160,0.22);
+    --accent:       #0078c8;
+    --accent2:      #00aaff;
+    --accent-cold:  #4fa8d8;
+    --text:         #1a2a38;
+    --text-dim:     #4a6070;
+    --text-muted:   #5a6f80;
+    --white:        #0d1e2e;
+    --danger:       #cc2040;
+    --green:        #008860;
+    --shadow:       rgba(0,60,120,0.10);
+
+    /* code / schema blocks stay dark */
+    --code-bg:      #0d1520;
+    --schema-bg:    #060a0e;
+  }
+
+  /* ══════════════════════════════════════════════════
+     DARK THEME — only on mobile via prefers-color-scheme
+  ══════════════════════════════════════════════════ */
+  @media (max-width: 768px) and (prefers-color-scheme: dark) {
+    :root {
+      --bg:           #080c10;
+      --bg2:          #0d1318;
+      --bg3:          #111820;
+      --border:       rgba(0,180,255,0.12);
+      --border-str:   rgba(0,180,255,0.22);
+      --accent:       #00b4ff;
+      --accent2:      #00e5ff;
+      --accent-cold:  #7dd4f0;
+      --text:         #c8d8e8;
+      --text-dim:     #5a7080;
+      --text-muted:   #2e4050;
+      --white:        #eaf4fb;
+      --danger:       #ff4060;
+      --green:        #00e5aa;
+      --shadow:       rgba(0,0,0,0.40);
+      --code-bg:      #0d1520;
+      --schema-bg:    #060a0e;
+    }
+  }
+
+  /* ══════════════════════════════════════════════════
+     LAYOUT — hero slide + scrollable content pane
+  ══════════════════════════════════════════════════ */
+  html, body {
+    width: 100%; height: 100%;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px; line-height: 1.7;
+  }
+
+  .slide-viewport {
+    width: 100%; height: 100vh;
+    overflow: hidden; position: relative;
+  }
+
+  .slide-track {
+    display: flex; flex-direction: column;
+    transition: transform 0.75s cubic-bezier(0.77, 0, 0.175, 1);
+    will-change: transform;
+  }
+
+  /* Hero — full screen, fixed height */
+  .slide.hero {
+    width: 100%; height: 100vh;
+    flex-shrink: 0; position: relative; z-index: 1;
+  }
+
+  /* Content pane — normal scrollable flow */
+  .content-pane {
+    width: 100%; height: 100vh;
+    overflow-y: auto; overflow-x: hidden;
+    flex-shrink: 0;
+    scroll-behavior: smooth;
+  }
+
+  /* ── Arrow (only visible on hero) ── */
+  .slide-arrow {
+    position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%);
+    z-index: 500;
+    width: 40px; height: 40px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; font-size: 20px; color: var(--accent);
+    animation: arrowBlink 1.8s ease-in-out infinite;
+    user-select: none; transition: opacity 0.4s, color 0.2s;
+  }
+  .slide-arrow:hover { color: var(--accent2); }
+  .slide-arrow.hidden { opacity: 0; pointer-events: none; }
+  @keyframes arrowBlink {
+    0%,100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    50%      { opacity: 0.3; transform: translateX(-50%) translateY(6px); }
+  }
+
+  /* Noise overlay */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 0; opacity: 0.5;
+  }
+
+  /* Grid lines */
+  .grid-bg {
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image:
+      linear-gradient(rgba(0,120,200,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,120,200,0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* ══════════════════════════════════════════════════
+     NAVBAR
+  ══════════════════════════════════════════════════ */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 300;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px; height: 64px;
+    background: rgba(245,246,248,0.94);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 1px 12px var(--shadow);
+    transition: background 0.3s;
+  }
+  @media (max-width: 768px) and (prefers-color-scheme: dark) {
+    nav { background: rgba(8,12,16,0.94); }
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 11px;
+    text-decoration: none; cursor: pointer; flex-shrink: 0;
+  }
+  /* mark SVG colours via CSS vars */
+  .nav-logo .mk-frame    { stroke: var(--accent); }
+  .nav-logo .mk-inner    { stroke: var(--accent); fill: rgba(0,0,0,0); }
+  .nav-logo .mk-axis     { stroke: var(--accent); }
+  .nav-logo .mk-node     { fill: var(--accent); }
+  .nav-logo .mk-core     { fill: var(--accent); }
+  .nav-logo .mk-glow1    { fill: var(--accent); }
+  .nav-logo .mk-glow2    { fill: var(--accent); }
+  .nav-logo .mk-tick     { stroke: var(--accent); }
+
+  .nav-logo-mark { display: block; flex-shrink: 0; }
+
+  .nav-logo-wm {
+    display: flex; align-items: baseline; line-height: 1; gap: 0;
+    white-space: nowrap;
+  }
+  .nav-logo-techno {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 19px; font-weight: 700; letter-spacing: 0.05em;
+    text-transform: uppercase; color: var(--white);
+  }
+  .nav-logo-sep {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 19px; font-weight: 700;
+    color: var(--accent);
+  }
+  .nav-logo-core {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 17px; font-weight: 400; letter-spacing: -0.01em;
+    color: var(--accent);
+  }
+
+  /* mobile: hide descriptor, keep mark + wordmark */
+  @media (max-width: 480px) {
+    .nav-logo-mark { width: 26px; height: 26px; }
+    .nav-logo-techno, .nav-logo-sep { font-size: 16px; }
+    .nav-logo-core { font-size: 14px; }
+  }
+  .nav-links {
+    display: flex; gap: 36px; list-style: none;
+  }
+  .nav-links a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; font-weight: 400; color: var(--text-dim);
+    text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+  .nav-burger {
+    display: none; flex-direction: column; gap: 5px;
+    cursor: pointer; padding: 8px; background: none; border: none;
+  }
+  .nav-burger span {
+    display: block; width: 22px; height: 2px;
+    background: var(--text-dim); transition: 0.3s;
+  }
+  .mobile-menu {
+    display: none;
+    position: fixed; top: 64px; left: 0; right: 0;
+    background: rgba(245,246,248,0.97);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    z-index: 299; flex-direction: column;
+    box-shadow: 0 4px 20px var(--shadow);
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px; letter-spacing: 0.12em; color: var(--text-dim);
+    text-decoration: none; text-transform: uppercase;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s, background 0.2s;
+  }
+  .mobile-menu a:hover { color: var(--accent); background: rgba(0,120,200,0.04); }
+  @media (max-width: 768px) and (prefers-color-scheme: dark) {
+    .mobile-menu { background: rgba(8,12,16,0.97); }
+    .mobile-menu a:hover { background: rgba(0,180,255,0.04); }
+  }
+
+  /* ══════════════════════════════════════════════════
+     HERO
+  ══════════════════════════════════════════════════ */
+  .hero {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 80px 48px 80px;
+    position: relative; overflow: hidden;
+    background: linear-gradient(135deg, #ecf3fa 0%, #f5f6f8 60%, #e8f0f8 100%);
+  }
+  @media (max-width: 768px) and (prefers-color-scheme: dark) {
+    .hero { background: linear-gradient(135deg, #060d14 0%, #080c10 60%, #060d18 100%); }
+  }
+  .hero-glow {
+    position: absolute; top: -180px; right: -180px;
+    width: 520px; height: 520px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,120,200,0.10) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-glow2 {
+    position: absolute; bottom: -120px; left: -120px;
+    width: 380px; height: 380px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,120,200,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .scan-line {
+    position: absolute; top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    animation: scanLine 4s linear infinite;
+    opacity: 0.3;
+  }
+  @keyframes scanLine {
+    0%   { top: 0; }
+    100% { top: 100%; }
+  }
+  .hero-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; letter-spacing: 0.22em; color: var(--accent);
+    text-transform: uppercase; margin-bottom: 24px;
+    position: relative; z-index: 1;
+  }
+  .hero-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: clamp(32px, 4.5vw, 64px); font-weight: 700; line-height: 0.94;
+    color: var(--white); letter-spacing: -0.01em; text-transform: uppercase;
+    position: relative; z-index: 1;
+  }
+  .hero-title span { color: var(--accent); }
+  .hero-subtitle {
+    margin-top: 28px; max-width: 520px;
+    font-size: 16px; font-weight: 300; color: var(--text-dim);
+    line-height: 1.7; position: relative; z-index: 1;
+  }
+  .hero-actions {
+    display: flex; gap: 16px; margin-top: 36px;
+    position: relative; z-index: 1;
+  }
+  .btn-primary {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #fff; background: var(--accent);
+    border: none; padding: 14px 28px; cursor: pointer; text-decoration: none;
+    border-radius: 6px;
+    display: inline-flex; align-items: center;
+    transition: opacity 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 18px rgba(0,120,200,0.28);
+  }
+  .btn-primary:hover { opacity: 0.85; }
+  .btn-outline {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--accent); background: transparent;
+    border: 1px solid var(--accent); padding: 14px 28px; cursor: pointer;
+    border-radius: 6px;
+    text-decoration: none; display: inline-flex; align-items: center;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn-outline:hover { background: rgba(0,120,200,0.08); }
+  .hero-stats {
+    display: flex; gap: 48px; z-index: 1;
+    margin-top: 36px;
+  }
+  .stat-num {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 36px; font-weight: 700; color: var(--white); line-height: 1;
+  }
+  .stat-num span { color: var(--accent); }
+  .stat-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px; letter-spacing: 0.14em; color: var(--text-dim);
+    text-transform: uppercase; margin-top: 4px;
+  }
+
+  /* ══════════════════════════════════════════════════
+     SECTION LAYOUT
+  ══════════════════════════════════════════════════ */
+  section:not(.hero) {
+    padding: 80px 48px 32px;
+    display: flex; flex-direction: column;
+  }
+
+  .section-header {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    margin-bottom: 40px; padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; letter-spacing: 0.2em; color: var(--accent);
+    text-transform: uppercase; margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 36px; font-weight: 700; color: var(--white);
+    letter-spacing: 0.03em; text-transform: uppercase; line-height: 1;
+  }
+  .section-num {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 72px; font-weight: 700;
+    color: var(--border-str); line-height: 1;
+    letter-spacing: -0.02em; user-select: none;
+  }
+
+  /* Reveal animation */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+
+  /* ══════════════════════════════════════════════════
+     SERVICES
+  ══════════════════════════════════════════════════ */
+  #services { background: var(--bg); }
+  .services-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+    flex: 1;
+  }
+  .service-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 22px;
+    display: flex; flex-direction: column; gap: 14px;
+    align-items: center; text-align: center;
+    transition: background 0.25s, border-color 0.25s, box-shadow 0.25s;
+    position: relative; overflow: hidden;
+  }
+  .service-card::before {
+    content: ''; position: absolute; top: 0; left: 10%; right: 10%;
+    height: 2px; border-radius: 0 0 4px 4px;
+    background: var(--accent);
+    transition: opacity 0.4s ease; opacity: 0;
+  }
+  .service-card:hover {
+    background: var(--bg3); border-color: var(--border-str);
+    box-shadow: 0 4px 20px var(--shadow);
+  }
+  .service-card:hover::before { opacity: 1; }
+  .service-icon {
+    font-size: 30px; line-height: 1;
+  }
+  .service-name {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px; font-weight: 700; color: var(--white);
+    letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.2;
+  }
+  .service-desc {
+    font-size: 13px; font-weight: 300; color: var(--text-dim); line-height: 1.6;
+  }
+  .service-tags {
+    display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto;
+    justify-content: center;
+  }
+  .service-tag, .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; letter-spacing: 0.08em; color: var(--accent);
+    border: 1px solid var(--border); border-radius: 20px;
+    padding: 3px 10px; text-transform: uppercase;
+    background: rgba(0,120,200,0.06);
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .service-tag:hover, .tag:hover {
+    background: rgba(0,120,200,0.12); border-color: var(--border-str);
+  }
+
+  /* ══════════════════════════════════════════════════
+     PROJECTS
+  ══════════════════════════════════════════════════ */
+  #projects { background: var(--bg2); }
+  .projects-list { display: flex; flex-direction: column; gap: 8px; }
+  .project-row {
+    display: grid;
+    grid-template-columns: 60px 1fr auto 36px;
+    align-items: center; gap: 32px;
+    padding: 20px 28px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: background 0.25s, border-color 0.25s, box-shadow 0.2s;
+    cursor: pointer; user-select: none;
+    background: var(--bg2);
+  }
+  .project-row:last-child { border-bottom: 1px solid var(--border); }
+  .project-row:hover, .project-row.open {
+    background: var(--bg3); border-color: var(--border-str);
+    box-shadow: 0 2px 12px var(--shadow);
+  }
+  .project-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; letter-spacing: 0.12em; color: var(--text-dim);
+    text-transform: uppercase;
+  }
+  .project-name {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 17px; font-weight: 600; color: var(--white); letter-spacing: 0.02em;
+  }
+  .project-meta {
+    font-size: 12px; font-weight: 400; color: var(--text-dim);
+    margin-top: 2px; font-family: 'IBM Plex Mono', monospace;
+  }
+  .project-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 4px 12px; border: 1px solid; border-radius: 20px;
+  }
+  .badge-done   { color: var(--green); border-color: currentColor; }
+  .badge-active { color: var(--accent); border-color: currentColor; }
+
+  .project-toggle {
+    font-size: 18px; color: var(--text-dim);
+    transition: transform 0.3s, color 0.2s;
+    text-align: center; line-height: 1;
+  }
+  .project-row.open .project-toggle { transform: rotate(45deg); color: var(--accent); }
+
+  /* Expand panel */
+  .project-expand {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+  }
+  .project-expand.open { max-height: 800px; }
+  .expand-inner { padding: 0 28px 24px; }
+
+  .exp-tabs {
+    display: flex; gap: 0; border-bottom: 1px solid var(--border);
+    margin-bottom: 20px;
+  }
+  .exp-tab {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text-dim); padding: 14px 20px; cursor: pointer;
+    border-bottom: 2px solid transparent; margin-bottom: -1px;
+    transition: color 0.2s, border-color 0.2s;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .exp-tab:hover { color: var(--accent); }
+  .exp-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .exp-tab-icon { font-size: 13px; }
+
+  .exp-pane { display: none; }
+  .exp-pane.active { display: block; }
+
+  /* Schema viewer */
+  .schema-wrap {
+    background: var(--schema-bg);
+    border: 1px solid rgba(0,180,255,0.12);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .schema-toolbar {
+    display: flex; align-items: center; gap: 12px; padding: 10px 16px;
+    border-bottom: 1px solid rgba(0,180,255,0.1);
+    background: rgba(0,20,36,0.6);
+  }
+  .schema-toolbar-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .schema-toolbar-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; letter-spacing: 0.12em; color: #5a7080;
+    text-transform: uppercase; flex: 1;
+  }
+  .schema-toolbar-badge {
+    font-family: 'IBM Plex Mono', monospace; font-size: 9px;
+    color: #00b4ff; border: 1px solid rgba(0,180,255,0.25); border-radius: 4px; padding: 2px 8px;
+  }
+  .schema-canvas { width: 100%; height: 260px; display: block; }
+  .schema-note {
+    font-family: 'IBM Plex Mono', monospace; font-size: 9px;
+    color: #2e4050; letter-spacing: 0.1em; padding: 8px 16px;
+    border-top: 1px solid rgba(0,180,255,0.07);
+    background: rgba(0,20,36,0.4);
+  }
+
+  /* Code viewer */
+  .code-wrap {
+    background: var(--code-bg); border: 1px solid rgba(0,180,255,0.12); border-radius: 8px; overflow: hidden;
+  }
+  .code-toolbar {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 16px; border-bottom: 1px solid rgba(0,180,255,0.1);
+    background: rgba(0,20,36,0.6);
+  }
+  .code-lang {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; letter-spacing: 0.1em; color: #00b4ff; text-transform: uppercase;
+  }
+  .code-filename {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; color: #3d6070; letter-spacing: 0.08em;
+  }
+  .code-block {
+    padding: 20px 24px; overflow-x: auto;
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 1.75;
+    color: #d4d4d4; white-space: pre;
+  }
+  .kw  { color: #569cd6; } .fn  { color: #dcdcaa; } .st  { color: #ce9178; }
+  .cm  { color: #4ec9b0; opacity: 0.7; } .num { color: #b5cea8; }
+  .tp  { color: #4ec9b0; } .vr  { color: #9cdcfe; } .op  { color: #d4d4d4; }
+
+  /* HMI grid */
+  .hmi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .hmi-thumb {
+    cursor: pointer; border: 1px solid rgba(0,180,255,0.12);
+    border-radius: 6px;
+    overflow: hidden; transition: border-color 0.2s;
+  }
+  .hmi-thumb:hover { border-color: rgba(0,180,255,0.5); }
+  .hmi-thumb svg { display: block; width: 100%; }
+  .hmi-label {
+    font-family: 'IBM Plex Mono', monospace; font-size: 9px; letter-spacing: 0.1em;
+    color: #3d6070; padding: 5px 8px; text-align: center; text-transform: uppercase;
+    background: rgba(0,20,36,0.6); border-top: 1px solid rgba(0,180,255,0.1);
+  }
+
+  /* ══════════════════════════════════════════════════
+     STACK
+  ══════════════════════════════════════════════════ */
+  #stack { background: var(--bg); }
+  .stack-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    flex: 1; align-content: start;
+  }
+  .stack-col, .stack-group {
+    background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 22px 20px;
+    display: flex; flex-direction: column; gap: 14px;
+    transition: border-color 0.25s, box-shadow 0.25s;
+  }
+  .stack-col:hover, .stack-group:hover {
+    border-color: var(--border-str);
+    box-shadow: 0 4px 16px var(--shadow);
+  }
+  .stack-category {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; letter-spacing: 0.16em; color: var(--accent);
+    text-transform: uppercase; padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .stack-items { display: flex; flex-wrap: wrap; gap: 8px; }
+  .stack-item {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; font-weight: 400; color: var(--text-dim);
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 20px; padding: 5px 14px;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+  .stack-item:hover {
+    background: rgba(0,120,200,0.08); color: var(--white);
+    border-color: var(--accent);
+  }
+
+  /* ══════════════════════════════════════════════════
+     TEAM
+  ══════════════════════════════════════════════════ */
+  #team { background: var(--bg2); }
+  .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; flex: 1; }
+  .team-card {
+    display: flex; flex-direction: column;
+    border: 1px solid var(--border); background: var(--bg);
+    border-radius: 10px;
+    position: relative; overflow: hidden;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .team-card:hover { border-color: var(--border-str); box-shadow: 0 4px 20px var(--shadow); }
+  .team-card::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .team-card:hover::after { opacity: 1; }
+  .team-header {
+    display: flex; align-items: center;
+    border-bottom: 1px solid var(--border); flex-shrink: 0;
+  }
+  .team-photo {
+    width: 100px; flex-shrink: 0;
+    display: flex; flex-direction: column; align-items: stretch;
+    border-right: 1px solid var(--border);
+  }
+  .team-photo svg { width: 100px; height: 100px; display: block; }
+  .team-photo-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8px; letter-spacing: 0.08em; color: var(--accent);
+    border-top: 1px solid var(--border); padding: 6px 0;
+    text-align: center; text-transform: uppercase;
+    background: rgba(0,120,200,0.04);
+  }
+  .team-header-info {
+    flex: 1; min-width: 0; padding: 16px 20px;
+    display: flex; flex-direction: column; justify-content: center; gap: 5px;
+  }
+  .team-name {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 21px; font-weight: 700; color: var(--white);
+    letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.1;
+  }
+  .team-role { font-size: 12px; font-weight: 300; color: var(--text-dim); line-height: 1.5; }
+  .team-section {
+    padding: 16px 22px; border-bottom: 1px solid var(--border);
+    width: 100%; box-sizing: border-box;
+  }
+  .team-section:last-child { border-bottom: none; }
+  .team-skills-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px; letter-spacing: 0.18em; color: var(--accent);
+    text-transform: uppercase; margin-bottom: 10px;
+  }
+  .team-skills { display: flex; flex-wrap: wrap; gap: 6px; }
+  .team-skill {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; letter-spacing: 0.08em; color: var(--accent);
+    border: 1px solid var(--border); border-radius: 20px;
+    padding: 3px 10px; text-transform: uppercase;
+    background: rgba(0,120,200,0.06);
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .team-skill:hover { background: rgba(0,120,200,0.12); border-color: var(--border-str); }
+  .team-projects { display: flex; flex-direction: column; gap: 7px; }
+  .team-project-item {
+    font-size: 12px; font-weight: 300; color: var(--text-dim);
+    display: flex; align-items: flex-start; gap: 8px; line-height: 1.55;
+  }
+  .team-project-dot {
+    width: 5px; height: 5px; flex-shrink: 0; margin-top: 5px;
+    background: var(--accent);
+    clip-path: polygon(50% 0%,100% 50%,50% 100%,0% 50%);
+  }
+  .team-exp { display: flex; gap: 0; }
+  .team-exp-item {
+    flex: 1; display: flex; flex-direction: column; gap: 3px;
+    border-right: 1px solid var(--border); padding: 0 14px 0 0; margin-right: 14px;
+  }
+  .team-exp-item:last-child { border-right: none; margin-right: 0; }
+  .team-exp-item span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px; letter-spacing: 0.12em; color: var(--text-dim); text-transform: uppercase;
+  }
+  .team-exp-value {
+    font-family: 'Rajdhani', sans-serif; font-size: 16px; font-weight: 600; color: var(--white);
+  }
+
+  /* ══════════════════════════════════════════════════
+     CONTACT
+  ══════════════════════════════════════════════════ */
+  #contact { background: var(--bg3); }
+  .contact-cards {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 14px; margin-bottom: 32px;
+  }
+  .contact-card {
+    background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 28px 22px;
+    display: flex; flex-direction: column; gap: 10px;
+    transition: background 0.25s, border-color 0.25s, box-shadow 0.25s;
+    position: relative;
+  }
+  .contact-card::before {
+    content: ''; position: absolute; top: 0; left: 10%; right: 10%;
+    height: 2px; border-radius: 0 0 4px 4px;
+    background: var(--accent); opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .contact-card:hover {
+    background: var(--bg3); border-color: var(--border-str);
+    box-shadow: 0 4px 16px var(--shadow);
+  }
+  .contact-card:hover::before { opacity: 1; }
+  .contact-card-icon { font-size: 22px; color: var(--accent); opacity: 0.7; line-height: 1; }
+  .contact-card-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; letter-spacing: 0.14em; color: var(--text-dim); text-transform: uppercase;
+  }
+  .contact-card-value {
+    font-family: 'Rajdhani', sans-serif; font-size: 18px; font-weight: 600;
+    color: var(--white); letter-spacing: 0.03em;
+  }
+  .contact-cta {
+    text-align: center; padding: 28px;
+    border: 1px solid var(--border); border-radius: 10px;
+    background: rgba(0,120,200,0.03);
+  }
+  .contact-cta p {
+    font-size: 15px; font-weight: 300; color: var(--text-dim);
+    max-width: 560px; margin: 0 auto; line-height: 1.8;
+  }
+
+  /* ── Requisites ── */
+  .requisites {
+    margin-top: 20px;
+    border: 1px solid var(--border); border-radius: 10px;
+    overflow: hidden;
+  }
+  .requisites-header {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 20px;
+    background: rgba(0,120,200,0.04);
+    border-bottom: 1px solid var(--border);
+  }
+  .requisites-header-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent); opacity: 0.6; flex-shrink: 0;
+  }
+  .requisites-header-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; letter-spacing: 0.18em; color: var(--accent);
+    text-transform: uppercase;
+  }
+  .requisites-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+  .req-item {
+    padding: 14px 20px;
+    border-right: 1px solid var(--border);
+    display: flex; flex-direction: column; gap: 5px;
+  }
+  .req-item:last-child { border-right: none; }
+  .req-item:nth-child(4) { border-right: none; }
+  .req-item:nth-child(n+5) { border-top: 1px solid var(--border); }
+  .req-item:nth-child(5) { border-right: 1px solid var(--border); }
+  .req-item:nth-child(6) { border-right: 1px solid var(--border); }
+  .req-item:nth-child(7) { border-right: 1px solid var(--border); }
+  .req-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px; letter-spacing: 0.14em; color: var(--text-muted);
+    text-transform: uppercase;
+  }
+  .req-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; color: var(--text-dim); letter-spacing: 0.02em;
+    line-height: 1.45; word-break: break-word;
+  }
+  .req-value.accent { color: var(--white); font-weight: 500; }
+
+  @media (max-width: 768px) {
+    .requisites-grid { grid-template-columns: 1fr 1fr; }
+    .req-item:nth-child(2n) { border-right: none; }
+    .req-item:nth-child(n+3) { border-top: 1px solid var(--border); }
+    .req-item:nth-child(2n+1):not(:nth-child(n+3)) { border-top: none; }
+    .req-item { padding: 12px 14px; }
+  }
+  @media (max-width: 480px) {
+    .requisites-grid { grid-template-columns: 1fr; }
+    .req-item { border-right: none !important; border-top: 1px solid var(--border); }
+    .req-item:first-child { border-top: none; }
+  }
+
+  /* Footer inside contact */
+  footer {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 0 0; margin-top: auto;
+    border-top: 1px solid var(--border);
+  }
+  .footer-logo {
+    display: flex; align-items: center; gap: 9px;
+    color: var(--text-dim);
+  }
+  .footer-wm { display:flex; align-items:baseline; gap:0; line-height:1; }
+  .footer-wm-t {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px; font-weight: 700; letter-spacing: 0.05em;
+    text-transform: uppercase; color: var(--text-dim);
+  }
+  .footer-wm-sep {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px; font-weight: 700; color: var(--accent);
+  }
+  .footer-wm-c {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px; font-weight: 400; letter-spacing: -0.01em;
+    color: var(--accent);
+  }
+  .footer-copy {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; letter-spacing: 0.1em; color: var(--text-dim);
+  }
+
+  /* ══════════════════════════════════════════════════
+     HERO CONTACTS — right edge strip
+  ══════════════════════════════════════════════════ */
+  .hero-contacts {
+    position: absolute; right: 48px; bottom: 48px;
+    display: flex; flex-direction: column; align-items: flex-end; gap: 10px;
+    z-index: 2;
+  }
+  .hero-contact-item {
+    display: flex; align-items: center; gap: 8px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; letter-spacing: 0.08em;
+    color: var(--text-dim);
+    text-decoration: none;
+    transition: color 0.2s;
+    white-space: nowrap;
+  }
+  .hero-contact-item:hover { color: var(--accent); }
+  .hero-contact-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: var(--accent); flex-shrink: 0; opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
+    .hero-contacts {
+      position: static; right: auto; bottom: auto;
+      flex-direction: row; align-items: center;
+      flex-wrap: wrap; gap: 16px;
+      margin-top: 20px;
+    }
+    .hero-contact-item { font-size: 12px; }
+  }
+
+
+  .lightbox {
+    position: fixed; inset: 0; z-index: 1000;
+    background: rgba(0,0,0,0.85); backdrop-filter: blur(4px);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 16px; opacity: 0; pointer-events: none; transition: opacity 0.3s;
+  }
+  .lightbox.open { opacity: 1; pointer-events: all; }
+  .lightbox-close {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; letter-spacing: 0.12em; color: #5a7080;
+    cursor: pointer; text-transform: uppercase;
+  }
+  .lightbox-svg { max-width: 90vw; max-height: 85vh; overflow: auto; }
+
+  /* ══════════════════════════════════════════════════
+     MOBILE — 768px
+  ══════════════════════════════════════════════════ */
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .nav-burger { display: flex; }
+
+    .hero { padding: 80px 20px 80px; }
+    .hero-title { font-size: 30px; line-height: 0.95; }
+    .hero-subtitle { font-size: 14px; margin-top: 20px; }
+    .hero-actions { flex-direction: column; gap: 12px; margin-top: 24px; }
+    .hero-actions a { width: 100%; justify-content: center; }
+    .hero-stats { gap: 20px; margin-top: 24px; }
+    .stat-num { font-size: 24px; }
+
+    section:not(.hero) { padding: 72px 20px 24px; }
+    .section-header { flex-direction: column; align-items: flex-start; gap: 4px; margin-bottom: 24px; }
+    .section-num { display: none; }
+    .section-title { font-size: 26px; }
+
+    .services-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .service-card { padding: 20px 16px; }
+
+    .project-row { grid-template-columns: 36px 1fr 28px; gap: 10px; padding: 16px 14px; }
+    .project-badge { display: none; }
+    .expand-inner { padding: 0 12px 20px; }
+    .exp-tab { padding: 10px 12px; font-size: 10px; }
+    .hmi-grid { grid-template-columns: 1fr 1fr; }
+    pre.code-block { font-size: 10px; padding: 14px; }
+
+    .stack-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    .team-grid { grid-template-columns: 1fr; gap: 16px; }
+    .team-photo { width: 80px; }
+    .team-photo svg { width: 80px; height: 80px; }
+    .team-header-info { padding: 12px 14px; }
+    .team-name { font-size: 18px; }
+    .team-section { padding: 12px 14px; }
+
+    .contact-cards { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .contact-card { padding: 20px 16px; }
+    .contact-card-value { font-size: 15px; }
+    .contact-cta { padding: 18px 14px; }
+
+    footer { flex-direction: column; gap: 6px; text-align: center; padding: 16px 0 0; }
+
+    .slide-arrow { bottom: 16px; }
+  }
+
+  @media (max-width: 480px) {
+    .hero-title { font-size: 30px; }
+    .hero-stats { flex-wrap: wrap; margin-top: 20px; }
+    .services-grid { grid-template-columns: 1fr; gap: 8px; }
+    .stack-grid { grid-template-columns: 1fr; gap: 8px; }
+    .hmi-grid { grid-template-columns: 1fr; }
+    .contact-cards { grid-template-columns: 1fr; gap: 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo" onclick="showHero()">
+    <svg class="nav-logo-mark" width="32" height="32" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="mk-frame" d="M14 2H54L66 14V54L54 66H14L2 54V14Z" stroke-width="2" fill="none" opacity="0.35"/>
+      <rect class="mk-inner" x="17" y="17" width="34" height="34" rx="1" stroke-width="1" opacity="0.7"/>
+      <line class="mk-axis" x1="34" y1="17" x2="34" y2="51" stroke-width="0.6" stroke-dasharray="2.5 2.5" opacity="0.35"/>
+      <line class="mk-axis" x1="17" y1="34" x2="51" y2="34" stroke-width="0.6" stroke-dasharray="2.5 2.5" opacity="0.35"/>
+      <circle class="mk-node" cx="25" cy="25" r="2" opacity="0.25"/>
+      <circle class="mk-node" cx="34" cy="25" r="2" opacity="0.45"/>
+      <circle class="mk-node" cx="43" cy="25" r="2" opacity="0.25"/>
+      <circle class="mk-node" cx="25" cy="34" r="2" opacity="0.45"/>
+      <circle class="mk-glow2" cx="34" cy="34" r="12" opacity="0.07"/>
+      <circle class="mk-glow1" cx="34" cy="34" r="7"  opacity="0.13"/>
+      <circle class="mk-core"  cx="34" cy="34" r="4.5"/>
+      <circle class="mk-node" cx="43" cy="34" r="2" opacity="0.45"/>
+      <circle class="mk-node" cx="25" cy="43" r="2" opacity="0.25"/>
+      <circle class="mk-node" cx="34" cy="43" r="2" opacity="0.45"/>
+      <circle class="mk-node" cx="43" cy="43" r="2" opacity="0.25"/>
+      <line class="mk-tick" x1="2"  y1="14" x2="9"  y2="14" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+      <line class="mk-tick" x1="2"  y1="14" x2="2"  y2="21" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+      <line class="mk-tick" x1="66" y1="14" x2="59" y2="14" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+      <line class="mk-tick" x1="66" y1="14" x2="66" y2="21" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+      <line class="mk-tick" x1="2"  y1="54" x2="9"  y2="54" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+      <line class="mk-tick" x1="2"  y1="54" x2="2"  y2="47" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+      <line class="mk-tick" x1="66" y1="54" x2="59" y2="54" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+      <line class="mk-tick" x1="66" y1="54" x2="66" y2="47" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/>
+    </svg>
+    <div class="nav-logo-wm">
+      <span class="nav-logo-techno">ТЕХНО</span><span class="nav-logo-sep">.</span><span class="nav-logo-core">Core</span>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#services">Услуги</a></li>
+    <li><a href="#projects">Проекты</a></li>
+    <li><a href="#stack">Стек</a></li>
+    <li><a href="#team">Команда</a></li>
+    <li><a href="#contact">Контакты</a></li>
+  </ul>
+  <div class="nav-burger" onclick="toggleMenu()" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMenu()">Услуги</a>
+  <a href="#projects" onclick="closeMenu()">Проекты</a>
+  <a href="#stack" onclick="closeMenu()">Стек</a>
+  <a href="#team" onclick="closeMenu()">Команда</a>
+  <a href="#contact" onclick="closeMenu()">Контакты</a>
+</div>
+
+<!-- HERO -->
+
+<div class="slide-viewport">
+<div class="slide-track" id="slideTrack">
+<section id="hero" class="slide hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="scan-line"></div>
+
+  <div class="hero-tag">Проектирование &amp; Инжиниринг АСУ ТП</div>
+
+  <h1 class="hero-title">
+    Техно.Core<br>
+    <span>Проектная группа</span>
+  </h1>
+
+  <p class="hero-subtitle">
+    Разрабатываем, проектируем, программируем и вводим в эксплуатацию системы управления для насосных станций, термического и криогенного оборудования, систем гарантированного питания.
+  </p>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">10<span>+</span></div>
+      <div class="stat-label">Реализованных проектов</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">2<span></span></div>
+      <div class="stat-label">Ведущих инженера</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">4<span></span></div>
+      <div class="stat-label">Направления работ</div>
+    </div>
+  </div>
+
+  <div class="hero-contacts">
+    <a href="tel:+79222094545" class="hero-contact-item">
+      <span class="hero-contact-dot"></span>+7 (922) 209-45-45
+    </a>
+    <a href="mailto:com@techno-core.pro" class="hero-contact-item">
+      <span class="hero-contact-dot"></span>com@techno-core.pro
+    </a>
+  </div>
+</section>
+
+<div class="content-pane" id="contentPane">
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-tag">// 01 — Направления</div>
+      <div class="section-title">Что мы проектируем</div>
+    </div>
+    <div class="section-num">01</div>
+  </div>
+
+  <div class="services-grid reveal">
+
+    <div class="service-card">
+      <div class="service-icon">⚙️</div>
+      <div class="service-name">АСУ ТП насосных станций</div>
+      <p class="service-desc">
+        Полный цикл проектирования систем автоматизации: от разработки структурных и функциональных схем до программирования ПЛК и сдачи объекта. Управление насосными агрегатами, автоматическое регулирование давления и расхода, защиты и блокировки.
+      </p>
+      <div class="service-tags">
+        <span class="tag">EPlan Electric P8 2025</span>
+        <span class="tag">Компас.Электрик</span>
+        <span class="tag">ПЛК</span>
+        <span class="tag">SCADA</span>
+        <span class="tag">Регулирование</span>
+        <span class="tag">Защиты</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🌡️</div>
+      <div class="service-name">Термическое оборудование</div>
+      <p class="service-desc">
+        Системы управления нагревательными, плавильными и термообрабатывающими установками. Программируемые профили температуры, прецизионное регулирование, ведение архивов технологических параметров.
+      </p>
+      <div class="service-tags">
+        <span class="tag">Профили Т°</span>
+        <span class="tag">ПИД-регулирование</span>
+        <span class="tag">Архивирование</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">❄️</div>
+      <div class="service-name">Криогенное оборудование</div>
+      <p class="service-desc">
+        Специализированные АСУ для криогенных систем: управление испарителями, насосами криопродуктов, системами хранения. Контроль уровня, давления, температуры сжиженных газов. Встроенные системы безопасности и аварийной сигнализации.
+      </p>
+      <div class="service-tags">
+        <span class="tag">Сжиженные газы</span>
+        <span class="tag">Безопасность</span>
+        <span class="tag">Аварийная СС</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">⚡</div>
+      <div class="service-name">Системы гарантированного питания</div>
+      <p class="service-desc">
+        Проектирование щитов ГРЩ, АВР, ИБП для промышленных объектов. Автоматизация переключения источников питания, мониторинг состояния аккумуляторных батарей, диагностика и телеметрия.
+      </p>
+      <div class="service-tags">
+        <span class="tag">АВР</span>
+        <span class="tag">ИБП</span>
+        <span class="tag">ГРЩ</span>
+        <span class="tag">Мониторинг</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-tag">// 02 — Объекты</div>
+      <div class="section-title">Реализованные проекты</div>
+    </div>
+    <div class="section-num">02</div>
+  </div>
+
+  <div class="projects-list reveal">
+
+    <!-- 001 -->
+    <div class="project-row" onclick="toggleProject('p001',this)">
+      <div class="project-num">001</div>
+      <div class="project-info">
+        <div class="project-name">Автоматика блочно-модульной станции водоподготовки</div>
+        <div class="project-meta">500 м³/ч · EPlan Electric P8 2025 · Шкаф автоматики + шкаф управления осмосом · Программирование ПЛК</div>
+      </div>
+      <div class="project-badge badge-done">Выполнен</div>
+      <div class="project-toggle">+</div>
+    </div>
+    <div class="project-expand" id="p001">
+      <div class="expand-inner">
+        <div class="exp-tabs">
+          <div class="exp-tab active" onclick="switchTab(event,'p001','schema')"><span class="exp-tab-icon">⬡</span> Схемы</div>
+          <div class="exp-tab" onclick="switchTab(event,'p001','code')"><span class="exp-tab-icon">⌨</span> Код ST</div>
+        </div>
+        <div class="exp-pane active" data-pane="p001-schema">
+          <div class="schema-wrap">
+            <div class="schema-toolbar">
+              <div class="schema-toolbar-dot"></div>
+              <div class="schema-toolbar-title">Станция водоподготовки · Принципиальные электрические схемы</div>
+              <div class="schema-toolbar-badge">EPlan Electric P8 2025</div>
+            </div>
+            <div class="hmi-grid">
+              <div class="hmi-thumb" onclick="openLightbox(this)">
+                <img src="img/p001-schema1.jpg" alt="Схема 1 — шкаф автоматики" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+                <div class="hmi-label">Схема 1 — шкаф автоматики</div>
+              </div>
+              <div class="hmi-thumb" onclick="openLightbox(this)">
+                <img src="img/p001-schema2.jpg" alt="Схема 2 — шкаф автоматики" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+                <div class="hmi-label">Схема 2 — шкаф автоматики</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="exp-pane" data-pane="p001-code">
+          <div class="schema-wrap">
+            <div class="schema-toolbar">
+              <div class="schema-toolbar-dot"></div>
+              <div class="schema-toolbar-title">Программа ПЛК · Structured Text (IEC 61131-3)</div>
+              <div class="schema-toolbar-badge">ST</div>
+            </div>
+            <div class="hmi-grid">
+              <div class="hmi-thumb" onclick="openLightbox(this)">
+                <img src="img/p001-code1.jpg" alt="Код 1" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+                <div class="hmi-label">Фрагмент кода · лист 1</div>
+              </div>
+              <div class="hmi-thumb" onclick="openLightbox(this)">
+                <img src="img/p001-code2.jpg" alt="Код 2" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+                <div class="hmi-label">Фрагмент кода · лист 2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 002 -->
+    <div class="project-row" onclick="toggleProject('p002',this)">
+      <div class="project-num">002</div>
+      <div class="project-info">
+        <div class="project-name">Программирование контроллера и HMI ливневых очистных сооружений</div>
+        <div class="project-meta">Овен ПЛК · Панель оператора Овен · Программирование + разработка HMI</div>
+      </div>
+      <div class="project-badge badge-done">Выполнен</div>
+      <div class="project-toggle">+</div>
+    </div>
+    <div class="project-expand" id="p002">
+      <div class="expand-inner">
+        <div class="exp-tabs">
+          <div class="exp-tab active" onclick="switchTab(event,'p002','code')"><span class="exp-tab-icon">⌨</span> Код Owen Logic</div>
+        </div>
+        <div class="exp-pane active" data-pane="p002-code">
+          <div class="schema-wrap">
+            <div class="schema-toolbar">
+              <div class="schema-toolbar-dot"></div>
+              <div class="schema-toolbar-title">Программа ПЛК Овен · HMI панели оператора</div>
+              <div class="schema-toolbar-badge">Owen Logic</div>
+            </div>
+            <div class="hmi-grid">
+              <div class="hmi-thumb" onclick="openLightbox(this)">
+                <img src="img/p002-code1.jpg" alt="Код ПЛК Овен 1" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+                <div class="hmi-label">Программа ПЛК · фрагмент 1</div>
+              </div>
+              <div class="hmi-thumb" onclick="openLightbox(this)">
+                <img src="img/p002-code2.jpg" alt="Код ПЛК Овен 2" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+                <div class="hmi-label">Программа ПЛК · фрагмент 2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 003 -->
+    <div class="project-row" onclick="toggleProject('p003',this)">
+      <div class="project-num">003</div>
+      <div class="project-info">
+        <div class="project-name">Автоматика масляной закалочной ванны</div>
+        <div class="project-meta">EPlan Electric P8 2025 · Разработка КД на шкаф автоматики</div>
+      </div>
+      <div class="project-badge badge-done">Выполнен</div>
+      <div class="project-toggle">+</div>
+    </div>
+    <div class="project-expand" id="p003">
+      <div class="expand-inner">
+        <div class="exp-tabs">
+          <div class="exp-tab active" onclick="switchTab(event,'p003','schema')"><span class="exp-tab-icon">⬡</span> Схемы</div>
+        </div>
+        <div class="exp-pane active" data-pane="p003-schema">
+          <div class="schema-wrap">
+            <div class="schema-toolbar">
+              <div class="schema-toolbar-dot"></div>
+              <div class="schema-toolbar-title">Масляная закалочная ванна · Принципиальные электрические схемы</div>
+              <div class="schema-toolbar-badge">EPlan Electric P8 2025</div>
+            </div>
+            <div class="hmi-grid">
+              <div class="hmi-thumb" onclick="openLightbox(this)">
+                <img src="img/p003-schema1.jpg" alt="Схема шкафа автоматики 1" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+                <div class="hmi-label">Шкаф автоматики · лист 1</div>
+              </div>
+              <div class="hmi-thumb" onclick="openLightbox(this)">
+                <img src="img/p003-schema2.jpg" alt="Схема шкафа автоматики 2" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+                <div class="hmi-label">Шкаф автоматики · лист 2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 004 -->
+    <div class="project-row" onclick="toggleProject('p004',this)">
+      <div class="project-num">004</div>
+      <div class="project-info">
+        <div class="project-name">Автоматика станции подачи газообразного азота 40 МПа · 2000 м³/ч</div>
+        <div class="project-meta">EPlan P8 · Компас · Шкаф автоматики + шкаф ЧП · Программирование ПЛК · T: 20–30 °C</div>
+      </div>
+      <div class="project-badge badge-active">В работе</div>
+      <div class="project-toggle">+</div>
+    </div>
+    <div class="project-expand" id="p004">
+      <div class="expand-inner">
+        <div class="exp-tabs">
+          <div class="exp-tab active" onclick="switchTab(event,'p004','schema')"><span class="exp-tab-icon">⬡</span> Схемы</div>
+        </div>
+        <div class="exp-pane active" data-pane="p004-schema">
+          <div class="schema-wrap">
+            <div class="schema-toolbar">
+              <div class="schema-toolbar-dot"></div>
+              <div class="schema-toolbar-title">Станция N₂ 40 МПа · Принципиальные электрические схемы (в разработке)</div>
+              <div class="schema-toolbar-badge">Компас</div>
+            </div>
+            <div class="hmi-grid">
+              <div class="hmi-thumb" onclick="openLightbox(this)">
+                <img src="img/p004-schema1.jpg" alt="Схема шкафа автоматики" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+                <div class="hmi-label">Шкаф автоматики</div>
+              </div>
+              <div class="hmi-thumb" onclick="openLightbox(this)">
+                <img src="img/p004-schema2.jpg" alt="Схема шкафа частотных преобразователей" style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+                <div class="hmi-label">Шкаф частотных преобразователей</div>
+              </div>
+            </div>
+            <div class="schema-note" style="margin-top:12px">// Проект в активной разработке · материалы обновляются</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- STACK -->
+<section id="stack">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-tag">// 03 — Инструменты</div>
+      <div class="section-title">Стек технологий</div>
+    </div>
+    <div class="section-num">03</div>
+  </div>
+
+  <div class="stack-grid reveal">
+
+    <div class="stack-group">
+      <div class="stack-category">// Проектирование электрики</div>
+      <div class="stack-items">
+        <div class="stack-item">EPlan Electric P8 2025</div>
+        <div class="stack-item">AutoCAD Electric</div>
+        <div class="stack-item">Компас.Электрик</div>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <div class="stack-category">// Программирование ПЛК</div>
+      <div class="stack-items">
+        <div class="stack-item">Codesys 3.5</div>
+        <div class="stack-item">Owen Logic</div>
+        <div class="stack-item">Siemens TIA Portal</div>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <div class="stack-category">// Направления применения</div>
+      <div class="stack-items">
+        <div class="stack-item">Насосные станции</div>
+        <div class="stack-item">Термооборудование</div>
+        <div class="stack-item">Криогеника</div>
+        <div class="stack-item">Системы питания</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-tag">// 04 — Команда</div>
+      <div class="section-title">Инженеры проекта</div>
+    </div>
+    <div class="section-num">04</div>
+  </div>
+
+  <div class="team-grid reveal">
+
+    <div class="team-card">
+      <div class="team-header">
+        <div class="team-photo">
+          <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="110" height="110" fill="#0a1520"/>
+            <circle cx="55" cy="40" r="22" fill="#0d1e2e" stroke="#1a3a52" stroke-width="1.5"/>
+            <circle cx="55" cy="40" r="13" fill="#1a3040"/>
+            <text x="55" y="45" fill="#00b4ff" font-family="monospace" font-size="13" text-anchor="middle" opacity="0.7">АС</text>
+            <ellipse cx="55" cy="94" rx="31" ry="20" fill="#0d1e2e" stroke="#1a3a52" stroke-width="1.5"/>
+            <rect x="0" y="99" width="110" height="11" fill="#0a1520"/>
+          </svg>
+          <div class="team-photo-badge">Ведущий инженер</div>
+        </div>
+        <div class="team-header-info">
+          <div class="team-name">Михаил Третьяков</div>
+          <div class="team-role">Ведущий инженер АСУ ТП, инженер-программист · Специалист по проектированию АСУ ТП насосных, криогенных установок</div>
+        </div>
+      </div>
+      <div class="team-info">
+        <div class="team-section">
+          <div class="team-skills-title">// Компетенции</div>
+          <div class="team-skills">
+            <span class="team-skill">EPlan Electric P8</span>
+            <span class="team-skill">Codesys 3.5</span>
+            <span class="team-skill">SCADA/HMI</span>
+            <span class="team-skill">TIA Portal</span>
+            <span class="team-skill">Насосные станции</span>
+            <span class="team-skill">Криогенные установки</span>
+          </div>
+        </div>
+        <div class="team-section">
+          <div class="team-skills-title">// Ключевые проекты</div>
+          <div class="team-projects">
+            <div class="team-project-item"><span class="team-project-dot"></span>Автоматика станции подачи газообразного азота 40 МПа · 2000 м³/ч — Нефтедобыча</div>
+            <div class="team-project-item"><span class="team-project-dot"></span>Автоматика блочно-модульной станции водоподготовки — Водоканал</div>
+            <div class="team-project-item"><span class="team-project-dot"></span>Автоматика криогенного оборудования</div>            
+          </div>
+        </div>
+        <div class="team-section">
+          <div class="team-exp">
+            <div class="team-exp-item"><span>Опыт</span><span class="team-exp-value">15 лет</span></div>
+            <div class="team-exp-item"><span>Проектов</span><span class="team-exp-value">30+</span></div>
+            <div class="team-exp-item"><span>Образование</span><span class="team-exp-value">УРФУ</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-header">
+        <div class="team-photo">
+          <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+            <rect width="110" height="110" fill="#0a1520"/>
+            <circle cx="55" cy="40" r="22" fill="#0d1e2e" stroke="#1a3a52" stroke-width="1.5"/>
+            <circle cx="55" cy="40" r="13" fill="#1a3040"/>
+            <text x="55" y="45" fill="#00b4ff" font-family="monospace" font-size="13" text-anchor="middle" opacity="0.7">ДК</text>
+            <ellipse cx="55" cy="94" rx="31" ry="20" fill="#0d1e2e" stroke="#1a3a52" stroke-width="1.5"/>
+            <rect x="0" y="99" width="110" height="11" fill="#0a1520"/>
+          </svg>
+          <div class="team-photo-badge">Ведущий инженер</div>
+        </div>
+        <div class="team-header-info">
+          <div class="team-name">Игорь Матушкин</div>
+          <div class="team-role">Ведущий инженер АСУ ТП · Специалист по проектированию АСУ ТП термических установок и систем электропитания</div>
+        </div>
+      </div>
+      <div class="team-info">
+        <div class="team-section">
+          <div class="team-skills-title">// Компетенции</div>
+          <div class="team-skills">
+            <span class="team-skill">EPlan Electric P8</span>
+            <span class="team-skill">Owen Logic</span>
+            <span class="team-skill">Компас.Электрик</span>
+            <span class="team-skill">Системы электропитания</span>
+            <span class="team-skill">Термооборудование</span>
+          </div>
+        </div>
+        <div class="team-section">
+          <div class="team-skills-title">// Ключевые проекты</div>
+          <div class="team-projects">
+            <div class="team-project-item"><span class="team-project-dot"></span>Автоматика масляной закалочной ванны - Машиностроение</div>
+            <div class="team-project-item"><span class="team-project-dot"></span>Системы управления термическими камерами — 5 объектов</div>
+          </div>
+        </div>
+        <div class="team-section">
+          <div class="team-exp">
+            <div class="team-exp-item"><span>Опыт</span><span class="team-exp-value">20 лет</span></div>
+            <div class="team-exp-item"><span>Проектов</span><span class="team-exp-value">30+</span></div>
+            <div class="team-exp-item"><span>Образование</span><span class="team-exp-value">УРФУ</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-tag">// 05 — Контакты</div>
+      <div class="section-title">Обсудить задачу</div>
+    </div>
+    <div class="section-num">05</div>
+  </div>
+
+  <div class="contact-cards reveal">
+    <div class="contact-card">
+      <div class="contact-card-icon">✉</div>
+      <div class="contact-card-label">Email</div>
+      <div class="contact-card-value">com@techno-core.pro</div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-card-icon">✆</div>
+      <div class="contact-card-label">Телефон</div>
+      <div class="contact-card-value">+7 (922) 209-45-45</div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-card-icon">◷</div>
+      <div class="contact-card-label">График работы</div>
+      <div class="contact-card-value">Пн–Пт, 9:00–18:00</div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-card-icon">⌖</div>
+      <div class="contact-card-label">Регион</div>
+      <div class="contact-card-value">г. Екатеринбург, возможность удаленной работы в любом регионе</div>
+    </div>
+  </div>
+
+  <div class="contact-cta reveal">
+    <p>Готовы рассмотреть задачи любой сложности. Свяжитесь с нами — оценим проект и предложим техническое решение.</p>
+  </div>
+
+  <div class="requisites reveal">
+    <div class="requisites-header">
+      <div class="requisites-header-dot"></div>
+      <div class="requisites-header-title">// Реквизиты</div>
+    </div>
+    <div class="requisites-grid">
+      <div class="req-item">
+        <div class="req-label">Полное наименование</div>
+        <div class="req-value accent">ООО «Технокор»</div>
+      </div>
+      <div class="req-item">
+        <div class="req-label">ИНН / КПП</div>
+        <div class="req-value">6686167883 / 668601001</div>
+      </div>
+      <div class="req-item">
+        <div class="req-label">ОГРН</div>
+        <div class="req-value">1256600025637</div>
+      </div>
+      <div class="req-item">
+        <div class="req-label">Юридический адрес</div>
+        <div class="req-value">620143, г. Екатеринбург, ул. Уральских Рабочих, д. 49</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">
+      <svg width="26" height="26" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;opacity:0.7;">
+        <path d="M14 2H54L66 14V54L54 66H14L2 54V14Z" stroke="currentColor" stroke-width="2" fill="none" opacity="0.4"/>
+        <rect x="17" y="17" width="34" height="34" rx="1" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
+        <circle cx="25" cy="25" r="2" fill="currentColor" opacity="0.25"/>
+        <circle cx="34" cy="25" r="2" fill="currentColor" opacity="0.45"/>
+        <circle cx="43" cy="25" r="2" fill="currentColor" opacity="0.25"/>
+        <circle cx="25" cy="34" r="2" fill="currentColor" opacity="0.45"/>
+        <circle cx="34" cy="34" r="4.8" fill="currentColor"/>
+        <circle cx="43" cy="34" r="2" fill="currentColor" opacity="0.45"/>
+        <circle cx="25" cy="43" r="2" fill="currentColor" opacity="0.25"/>
+        <circle cx="34" cy="43" r="2" fill="currentColor" opacity="0.45"/>
+        <circle cx="43" cy="43" r="2" fill="currentColor" opacity="0.25"/>
+        <line x1="2" y1="14" x2="9" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+        <line x1="2" y1="14" x2="2" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+        <line x1="66" y1="14" x2="59" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+        <line x1="66" y1="14" x2="66" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+        <line x1="2" y1="54" x2="9" y2="54" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+        <line x1="2" y1="54" x2="2" y2="47" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+        <line x1="66" y1="54" x2="59" y2="54" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+        <line x1="66" y1="54" x2="66" y2="47" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+      </svg>
+      <span class="footer-wm"><span class="footer-wm-t">ТЕХНО</span><span class="footer-wm-sep">.</span><span class="footer-wm-c">Core</span></span>
+    </div>
+    <div class="footer-copy">© 2026 · Все права защищены.</div>
+  </footer>
+</div><!-- /content-pane -->
+</div><!-- /slide-track -->
+</div><!-- /slide-viewport -->
+
+</section>
+
+<!-- LIGHTBOX -->
+<div class="slide-arrow" id="slideArrow" onclick="nextSlide()">↓</div>
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">[ ESC / закрыть ]</div>
+  <div class="lightbox-svg"></div>
+</div><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // ── HERO ↔ CONTENT TRANSITION ──
+  const track     = document.getElementById('slideTrack');
+  const arrow     = document.getElementById('slideArrow');
+  const contentEl = document.getElementById('contentPane');
+  let onHero    = true;
+  let animating = false;
+  const ANIM_MS = 750;
+
+  function showContent() {
+    if (!onHero || animating) return;
+    animating = true; onHero = false;
+    track.style.transform = 'translateY(-100vh)';
+    arrow.classList.add('hidden');
+    // Reveal first batch of content sections
+    contentEl.querySelectorAll('.reveal:not(.visible)').forEach((el, i) => {
+      setTimeout(() => el.classList.add('visible'), i * 60 + 200);
+    });
+    setTimeout(() => { animating = false; }, ANIM_MS);
+  }
+
+  function showHero() {
+    if (onHero || animating) return;
+    animating = true; onHero = true;
+    track.style.transform = 'translateY(0)';
+    arrow.classList.remove('hidden');
+    setTimeout(() => { animating = false; }, ANIM_MS);
+  }
+
+  // Arrow click
+  arrow.addEventListener('click', showContent);
+
+  // Wheel: on hero → go to content; in content at top → go back to hero
+  let wheelAcc = 0, wheelTimer = null;
+  window.addEventListener('wheel', e => {
+    if (onHero) {
+      e.preventDefault();
+      clearTimeout(wheelTimer);
+      wheelAcc += e.deltaY;
+      wheelTimer = setTimeout(() => {
+        if (wheelAcc > 30) showContent();
+        wheelAcc = 0;
+      }, 50);
+    }
+    // When in content and scrolled to top, scrolling up → back to hero
+    if (!onHero && contentEl.scrollTop === 0 && e.deltaY < -60 && !animating) {
+      showHero();
+    }
+  }, { passive: false });
+
+  // Touch swipe
+  let touchY = null;
+  window.addEventListener('touchstart', e => { touchY = e.touches[0].clientY; }, { passive: true });
+  window.addEventListener('touchend', e => {
+    if (touchY === null) return;
+    const dy = touchY - e.changedTouches[0].clientY;
+    if (onHero && dy > 40) showContent();
+    if (!onHero && contentEl.scrollTop === 0 && dy < -40) showHero();
+    touchY = null;
+  }, { passive: true });
+
+  // Keyboard
+  window.addEventListener('keydown', e => {
+    if (e.key === 'ArrowDown' || e.key === 'PageDown') showContent();
+    if (e.key === 'ArrowUp'   || e.key === 'PageUp') {
+      if (!onHero && contentEl.scrollTop === 0) showHero();
+    }
+  });
+
+  // Nav links → switch to content then scroll to section
+  document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const id = a.getAttribute('href').replace('#','');
+      const target = document.getElementById(id);
+      if (!target) return;
+      if (id === 'hero') { showHero(); return; }
+      if (onHero) {
+        showContent();
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }, ANIM_MS);
+      } else {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  // IntersectionObserver for reveals inside content pane
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 60);
+        revealObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, root: contentEl });
+  contentEl.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+  // Hero reveal on load
+  document.querySelector('.hero').querySelectorAll('.reveal').forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), i * 60 + 200);
+  });
+
+  // ── PROJECT EXPAND ──
+  // ── PROJECT EXPAND ──
+  function toggleProject(id, rowEl) {
+    const panel = document.getElementById(id);
+    const isOpen = panel.classList.contains('open');
+    document.querySelectorAll('.project-expand.open').forEach(p => p.classList.remove('open'));
+    document.querySelectorAll('.project-row.open').forEach(r => r.classList.remove('open'));
+    if (!isOpen) {
+      panel.classList.add('open');
+      rowEl.classList.add('open');
+    }
+  }
+
+  function switchTab(event, projectId, tab) {
+    event.stopPropagation();
+    const panel = document.getElementById(projectId);
+    panel.querySelectorAll('.exp-tab').forEach(t => t.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+    panel.querySelectorAll('.exp-pane').forEach(p => p.classList.remove('active'));
+    const target = panel.querySelector('[data-pane="' + projectId + '-' + tab + '"]');
+    if (target) target.classList.add('active');
+  }
+
+  // ── LIGHTBOX ──
+  function openLightbox(el) {
+    const lb = document.getElementById('lightbox');
+    const wrap = lb.querySelector('.lightbox-svg');
+    wrap.innerHTML = '';
+    if (typeof el === 'string') {
+      // legacy: SVG by id
+      const svg = document.getElementById(el);
+      if (!svg) return;
+      const clone = svg.cloneNode(true);
+      clone.removeAttribute('id');
+      clone.style.width = '80vw';
+      clone.style.height = 'auto';
+      wrap.appendChild(clone);
+    } else if (el && el.tagName === 'IMG') {
+      // img element: show full-size image
+      const img = document.createElement('img');
+      img.src = el.src;
+      img.alt = el.alt || '';
+      img.style.cssText = 'max-width:90vw;max-height:88vh;object-fit:contain;border-radius:6px;display:block;';
+      wrap.appendChild(img);
+    } else if (el) {
+      // hmi-thumb container clicked — find inner img if any
+      const inner = el.querySelector('img');
+      if (inner) {
+        const img = document.createElement('img');
+        img.src = inner.src;
+        img.alt = inner.alt || '';
+        img.style.cssText = 'max-width:90vw;max-height:88vh;object-fit:contain;border-radius:6px;display:block;';
+        wrap.appendChild(img);
+      }
+    }
+    lb.classList.add('open');
+  }
+  document.getElementById('lightbox').addEventListener('click', function() {
+    this.classList.remove('open');
+  });
+
+  // ── HAMBURGER ──
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+</script>
+</body>
+</html>
